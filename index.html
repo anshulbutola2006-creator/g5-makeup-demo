@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>G5 Makeup Studio &amp; Academy — Bridal Makeup Artist, Dehradun | Demo</title>
+<meta name="description" content="Demo website concept for G5 Makeup Studio & Academy, Race Course, Dehradun — bridal makeup, HD airbrush, hairstyling. Sample preview: not a live client site." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { serif2: ['Playfair Display', 'serif'], body2: ['Inter', 'system-ui', 'sans-serif'] },
+        colors: {
+          rose2: { DEFAULT: '#be5b6b', dark: '#98424f' },
+          champagne: '#f4e9dc'
+        },
+        keyframes: {
+          floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } },
+          fadeUp: { from: { opacity: '0', transform: 'translateY(24px)' }, to: { opacity: '1', transform: 'translateY(0)' } }
+        },
+        animation: { floaty: 'floaty 4s ease-in-out infinite', fadeUp: 'fadeUp .8s ease-out both' }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family:'Inter', system-ui, sans-serif; }
+  .font-display2 { font-family:'Playfair Display', serif; }
+  .hero-g5 { background: linear-gradient(160deg, rgba(30,17,22,.82), rgba(52,26,34,.55)), url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat; }
+  .float-card { animation: floaty 4s ease-in-out infinite; }
+  .float-card-2 { animation: floaty 5s ease-in-out infinite; animation-delay: 1s; }
+  .fade-up { animation: fadeUp .8s ease-out both; }
+  @media (prefers-reduced-motion: reduce) { .float-card, .float-card-2, .fade-up { animation:none !important; } }
+</style>
+</head>
+<body class="bg-[#faf6f1] text-slate-800 font-body2 antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-[#faf6f1]/90 backdrop-blur border-b border-rose-100">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 h-16" aria-label="Main">
+    <a href="#top" class="flex items-center gap-2.5 focus-ring rounded">
+      <span class="grid place-items-center w-10 h-10 rounded-full bg-rose2 text-white font-display2 font-bold text-base">G5</span>
+      <span class="font-display2 text-xl">G5 Makeup Studio</span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+      <a href="#services" class="hover:text-rose2 transition-colors">Services</a>
+      <a href="#gallery" class="hover:text-rose2 transition-colors rounded">Gallery</a>
+      <a href="#reviews" class="hover:text-rose2 transition-colors rounded">Reviews</a>
+      <a href="#contact" class="hover:text-rose2 transition-colors rounded">Contact</a>
+    </div>
+    <a href="#contact" class="bg-rose2 hover:bg-rose2-dark text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors rounded">Book Now</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="hero-g5">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-20 pb-28 sm:pt-28 sm:pb-36">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-rose-200 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-5">Race Course · Dehradun</p>
+        <h1 class="font-display2 text-4xl sm:text-6xl text-white leading-[1.05]">Makeup artistry that makes your day <em class="text-rose-300 not-italic">unforgettable.</em></h1>
+        <p class="mt-6 text-rose-50/90 max-w-md text-base sm:text-lg leading-relaxed">Bridal · HD airbrush · Party &amp; pre-wedding looks, crafted by award-loved artist Deepika — trusted by 100+ brides across Dehradun and Mussoorie.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="bg-rose2 hover:bg-rose2-dark text-white font-semibold px-6 py-3 rounded-full text-center transition-colors">Book a Free Consultation</a>
+          <a href="https://wa.me/917817805217?text=Hi%20G5%2C%20I%27d%20like%20to%20enquire%20about%20bridal%20makeup" target="_blank" rel="noopener" class="border border-white/40 hover:border-rose-200 hover:text-rose-200 px-6 py-3 rounded-full text-center font-medium transition-colors">WhatsApp Us →</a>
+        </div>
+        <div class="mt-10 flex items-center gap-4 text-sm text-rose-50/90">
+          <span class="text-rose-200 font-semibold">4.9★</span>
+          <span class="h-4 w-px bg-white/30"></span>
+          <span>91+ reviews on WedMeGood</span>
+          <span class="h-4 w-px bg-white/30"></span>
+          <span>120+ ratings on Justdial</span>
+        </div>
+      </div>
+
+      <!-- floating review cards -->
+      <div class="relative hidden lg:block h-[440px]">
+        <div class="float-card absolute top-2 right-6 w-64 rounded-2xl bg-white/95 shadow-xl p-4 rotate-2">
+          <div class="flex items-center gap-2 text-xs text-slate-500"><span class="grid place-items-center w-7 h-7 rounded-full bg-rose-100 text-rose2 font-semibold">P</span> Pallavi Sharma <span class="ml-auto text-rose-400">★★★★★</span></div>
+          <p class="mt-2 text-[13px] leading-relaxed text-slate-700">"Soft, elegant, natural… my makeup looked flawless in every lighting. Received endless compliments."</p>
+        </div>
+        <div class="float-card-2 absolute top-44 left-0 w-64 rounded-2xl bg-white/95 shadow-xl p-4 -rotate-2">
+          <div class="flex items-center gap-2 text-xs text-slate-500"><span class="grid place-items-center w-7 h-7 rounded-full bg-rose-100 text-rose2 font-semibold">S</span> Swati <span class="ml-auto text-rose-400">★★★★★</span></div>
+          <p class="mt-2 text-[13px] leading-relaxed text-slate-700">"High-quality products, makeup lasts all day. She tailored everything to my skin tone."</p>
+        </div>
+        <div class="float-card absolute bottom-2 right-16 w-60 rounded-2xl bg-white/95 shadow-xl p-4 rotate-1">
+          <div class="flex items-center gap-2 text-xs text-slate-500"><span class="grid place-items-center w-7 h-7 rounded-full bg-rose-100 text-rose2 font-semibold">R</span> Ritu Negi <span class="ml-auto text-rose-400">★★★★★</span></div>
+          <p class="mt-2 text-[13px] leading-relaxed text-slate-700">"I have very sensitive skin — she used products that didn't react at all. Made my day magical."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="border-y border-rose-100 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+    <div><p class="font-display2 text-2xl text-rose2">10+</p><p class="text-xs text-slate-500 uppercase tracking-wider mt-1">Years artistry</p></div>
+    <div><p class="font-display2 text-2xl text-rose2">100+</p><p class="text-xs text-slate-500 uppercase tracking-wider mt-1">Brides styled</p></div>
+    <div><p class="font-display2 text-2xl text-rose2">4.9★</p><p class="text-xs text-slate-500 uppercase tracking-wider mt-1">Avg. rating</p></div>
+    <div><p class="font-display2 text-2xl text-rose2">50+</p><p class="text-xs text-slate-500 uppercase tracking-wider mt-1">Wedding vendors</p></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-[#faf6f1]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose2">Services</p>
+    <h2 class="font-display2 text-3xl sm:text-4xl text-slate-900 mt-2">Look your best, at every occasion</h2>
+    <p class="text-slate-500 mt-3 max-w-xl text-sm">Prices are indicative for the preview — final price list will be confirmed by the studio owner.</p>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-2xl bg-white border border-rose-100 p-6 hover:shadow-lg transition-shadow">
+        <span class="inline-block text-rose2 text-2xl">💍</span>
+        <h3 class="font-display2 text-lg text-slate-900 mt-3">Bridal Makeup</h3>
+        <p class="text-sm text-slate-500 mt-2">Natural to glam — HD airbrush, draping &amp; hair styling for your D-day.</p>
+        <p class="mt-4 text-sm font-semibold text-rose2">From ₹15,000</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-rose-100 p-6 hover:shadow-lg transition-shadow">
+        <span class="inline-block text-rose2 text-2xl">✨</span>
+        <h3 class="font-display2 text-lg text-slate-900 mt-3">HD Airbrush</h3>
+        <p class="text-sm text-slate-500 mt-2">Featherlight, camera-perfect finish that lasts through the ceremonies.</p>
+        <p class="mt-4 text-sm font-semibold text-rose2">From ₹12,000</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-rose-100 p-6 hover:shadow-lg transition-shadow">
+        <span class="inline-block text-rose2 text-2xl">💄</span>
+        <h3 class="font-display2 text-lg text-slate-900 mt-3">Party / Sangeet</h3>
+        <p class="text-sm text-slate-500 mt-2">Glam looks for engagement, cocktail, sangeet &amp; receptions.</p>
+        <p class="mt-4 text-sm font-semibold text-rose2">From ₹5,000</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-rose-100 p-6 hover:shadow-lg transition-shadow">
+        <span class="inline-block text-rose2 text-2xl">🎓</span>
+        <h3 class="font-display2 text-lg text-slate-900 mt-3">Academy</h3>
+        <p class="text-sm text-slate-500 mt-2">Professional makeup courses taught hands-on at the studio.</p>
+        <p class="mt-4 text-sm font-semibold text-rose2">Enquire</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose2">Gallery</p>
+    <h2 class="font-display2 text-3xl sm:text-4xl text-slate-900 mt-2">A glimpse of the craft</h2>
+    <p class="text-slate-500 mt-3 max-w-xl text-sm">Sample preview imagery — final site will use the studio's own licensed photos with permission.</p>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=800&q=60" alt="Elegant bridal makeup look (sample)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/70 to-transparent px-4 py-3 text-sm text-white">Bridal — natural glam</span>
+      </div>
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=60" alt="Makeup artist at work (sample)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/70 to-transparent px-4 py-3 text-sm text-white">Pro artistry at work</span>
+      </div>
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=60" alt="Bridal hair styling (sample)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/70 to-transparent px-4 py-3 text-sm text-white">Bridal hair &amp; draping</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS with floating effect -->
+<section id="reviews" class="py-20 bg-[#faf6f1] overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose2">Real reviews</p>
+    <h2 class="font-display2 text-3xl sm:text-4xl text-slate-900 mt-2">What brides say about G5</h2>
+    <p class="text-slate-500 mt-3 max-w-xl text-sm">Sourced from the studio's public review pages (WedMeGood, Justdial). Names shown as published — the live site will display only with the studio's final approval.</p>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- card 1 -->
+      <figure class="float-card rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Pallavi Sharma · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"I had the best experience with makeup artist Deepika Dua. My makeup looked flawless in every lighting without ever feeling heavy or cakey. She enhanced my features instead of changing them."</blockquote>
+      </figure>
+      <!-- card 2 -->
+      <figure class="float-card-2 rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Swati · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"She has an incredible ability to enhance natural beauty while creating a glamorous look. High-quality products, makeup lasts all day without feeling heavy."</blockquote>
+      </figure>
+      <!-- card 3 -->
+      <figure class="float-card rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Ritu Negi · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"I have very sensitive skin and she used amazing products which didn't react on my skin. Not to mention I've got so many compliments. She truly made my day more magical."</blockquote>
+      </figure>
+      <!-- card 4 -->
+      <figure class="float-card-2 rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Kashish Goyal · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"Deepika is a makeup guru! She made me feel hella gorgeous without going overboard. Super down to earth vibe, and she really gets what you're going for."</blockquote>
+      </figure>
+      <!-- card 5 -->
+      <figure class="float-card rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Soniya Negi · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"Modern look on my wedding, classic yet chic on my mehendi, and a subtle traditional one on the D-day. She is highly professional and a lovely human too."</blockquote>
+      </figure>
+      <!-- card 6 -->
+      <figure class="float-card-2 rounded-2xl bg-white shadow-lg border border-rose-100 p-6">
+        <div class="flex items-center gap-2 text-sm text-rose-400">★★★★★ <span class="text-xs text-slate-400 font-medium">Ankita Sharma · WedMeGood</span></div>
+        <blockquote class="mt-3 text-[13.5px] leading-relaxed text-slate-600">"The wedding was delayed for 4 hours due to heavy showers, but the makeup was still on point even after the delay. Everyone at the venue asked for your details!"</blockquote>
+      </figure>
+    </div>
+    <p class="mt-8 text-xs text-slate-400 text-center">Showing 6 of 91 public reviews. Live site would carry full attribution links to the source pages.</p>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose2">Visit the studio</p>
+        <h2 class="font-display2 text-3xl sm:text-4xl text-slate-900 mt-2">Let's plan your look</h2>
+        <div class="mt-6 space-y-4 text-sm text-slate-600">
+          <p class="flex gap-3"><span class="text-rose2 mt-0.5">📍</span> Aaraghar Chowk, Race Course, Dehradun — 248001 (near Bhura Chicken)</p>
+          <p class="flex gap-3"><span class="text-rose2 mt-0.5">🕙</span> Mon–Sun: 10:00 AM – 10:00 PM</p>
+          <p class="flex gap-3"><span class="text-rose2 mt-0.5">📞</span> +91 78178 05217</p>
+        </div>
+        <div class="mt-6 rounded-2xl overflow-hidden border border-rose-100">
+          <iframe title="Map to G5 Makeup Studio, Race Course, Dehradun" src="https://www.google.com/maps?q=Aaraghar%20Chowk%2C%20Race%20Course%2C%20Dehradun&output=embed" class="w-full h-64" style="border:0" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-rose-100 bg-[#faf6f1] p-7 sm:p-8">
+        <h2 class="font-display2 text-2xl text-slate-900">Book a free consultation</h2>
+        <p class="text-sm text-slate-500 mt-1">Demo form — no data is sent anywhere in this preview. The real version would email/WhatsApp the studio directly.</p>
+        <form id="g5Form" class="mt-6 space-y-4" novalidate>
+          <div>
+            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Full name</label>
+            <input id="name" type="text" required autocomplete="name" placeholder="Your name" class="w-full bg-white border border-rose-100 rounded-lg px-3.5 py-2.5 text-sm focus:border-rose2 focus:outline-none focus:ring-2 focus:ring-rose2/30" />
+          </div>
+          <div>
+            <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">WhatsApp number</label>
+            <input id="phone" type="tel" required autocomplete="tel" pattern="[0-9+ ()-]{10,18}" placeholder="+91 XXXXX XXXXX" class="w-full bg-white border border-rose-100 rounded-lg px-3.5 py-2.5 text-sm focus:border-rose2 focus:outline-none focus:ring-2 focus:ring-rose2/30" />
+          </div>
+          <div>
+            <label for="occasion" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Occasion</label>
+            <select id="occasion" required class="w-full bg-white border border-rose-100 rounded-lg px-3.5 py-2.5 text-sm focus:border-rose2 focus:outline-none focus:ring-2 focus:ring-rose2/30">
+              <option value="">Select occasion…</option>
+              <option>Bridal</option><option>Engagement / Sangeet</option><option>Party / Reception</option><option>Academy course</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full bg-rose2 hover:bg-rose2-dark text-white font-semibold py-3 rounded-full transition-colors">Request Consultation</button>
+          <p id="g5Msg" class="hidden text-sm text-rose2 font-medium text-center" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-rose-100 py-8 bg-[#faf6f1]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+    <p>© 2026 G5 Makeup Studio &amp; Academy · Dehradun. Demo website — sample preview, not the studio's live site.</p>
+    <p><a href="#top" class="hover:text-rose2 transition-colors rounded">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('g5Form');
+  const msg = document.getElementById('g5Msg');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    const name = document.getElementById('name').value.trim();
+    form.reset();
+    msg.classList.remove('hidden');
+    msg.textContent = 'Thanks, ' + name.split(' ')[0] + ' — demo form (no backend). The real version sends enquiries straight to G5.';
+    setTimeout(() => msg.classList.add('hidden'), 6000);
+  });
+</script>
+</body>
+</html>
